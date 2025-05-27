@@ -1,31 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mais</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.min.css">
 </head>
 <body>
-    <div id="tudo-aqui">
-        <div id="conteudo">
-            <div id="coluna">
-                <h1>Bikcraft</h1>
-            </div>
-                
-                <div id="imagem">
-                    <p>Imagem da bicicleta</p>
-                    <input type="button" value="ver mais">
-                </div>
-                
-                <div id="vantagens"><h1>VANTAGENS BIKCRAFT</h1></div>
-                <div id="content-vantagen"><h2>Motor elétrico</h2>
-                <p>Permite você viajar distâncias inimaginaveis com a sua bike.</p>
-            <h2>40 km/h</h2>
-                <p>A mais rápida bicicleta elétrica disponível hoje no mercado</p>
-            <h2>Rastreador</h2>
-            <p>Rastreador e sistema anti-furto para garantir o seu sossego.</p></div>
-            </div>
-            </div>
+
+    <div id="logo">
+        <h1>Bikcraft</h1>
+    </div>
+
+    <header>
+        <a href="#">Sobre</a>
+        <a href="#">Produtos</a>
+        <a href="#">Lojas</a>
+        <a href="#">Contato</a>
+    </header>
+
+    <main>
+        <div id="grid">
+            <h3>Bicicletas feitas a mão</h3>
+            <span>A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios da marca</span>
+            <input id="button" type="button" value="ver mais">
+        </div>
+        
+        <img id="img-bicicleta" src="./bicicleta.jpg" alt="Bicicleta Elétrica">
+            
+        <h1 class="vantagens">VANTAGENS BIKCRAFT</h1>
+        
+        <div id="conteudo-baixo">
+        <ul class="conteudo-lista">
+            <li><strong>Motor Elétrico</strong>
+            <p>Permite você viajar distâncias inimaginaveis com a sua bike</p></li>
+            <li><strong>40 km/h</strong>
+            <p>A mais rápida bicicleta elétrica disponível hoje no mercado.</p></li>
+            <li><strong>Rastreador</strong>
+            <p>Rastreador e sistema anti-furto para garantr o seu sossego.</p></li>
+        </ul>
+        </div>
+    </main>
+    
 </body>
 </html>
