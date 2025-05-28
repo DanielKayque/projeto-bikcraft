@@ -9,21 +9,28 @@
 
 body{
     width: 100%;
-    background-color: #f1f1f1;
+    background-color: var(--fundo);
 }
 
 a{
     background-color: white;
     padding: 15px 30px;
-    color: black;
+    color: var(--texto-h1);
     border-radius: 4px;
     text-transform: uppercase;
+}
+
+h3,
+li strong,
+h1{
+    color: var(--texto-principal);
 }
 
 #logo{
     text-align: center;
     margin-top: 40px;
     font-size: 1.8rem;
+    color: var(--texto-h1);
 }
 
 header{
@@ -41,7 +48,7 @@ a{
 }
 
 a:hover{
-    border: 2px solid red;
+    border: 2px solid var(--button-color-hover);
 }
 
 main{
@@ -73,7 +80,7 @@ main{
     align-items: center;
     font-size: 4rem;
     font-weight: 700;
-    color: gray;
+    color: var(--texto-secundario);
 }
 
 .conteudo-lista{
@@ -93,17 +100,17 @@ main{
 }
 
 #button{
-    background-color: red;
+    background-color: var(--button-color);
     border: none;
     padding: 1rem 1.9rem;
     text-transform: uppercase;
-    color: white;
+    color: var(--texto-principal);
     font-size: 1rem;
     border-radius: 4px;
 }
 
 #button:hover{
-    background-color: rgb(177, 2, 2);
+    background-color: var(--button-color-hover);
 }
 
 li::before{
@@ -112,13 +119,13 @@ li::before{
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: red;
+    background-color: var(--before-color-hover);
     margin-right: 15px;
     vertical-align: center;
 }
 
 li:hover{
-    border-left: 4px solid red;
+    border-left: 4px solid var(--button-color-hover);
 }
 
 li:nth-child(odd){
@@ -173,5 +180,27 @@ li:nth-child(odd){
 @media (max-width: 894px){
     .vantagens{
         text-align: center;
+    }
+}
+
+@media (prefers-color-scheme: dark){
+    :root{
+        --fundo: #07070D;
+        --texto-principal: #593248;
+        --texto-secundario: #6A7348;
+        --button-color: #252940;
+        --button-color-hover: #191c2a;
+        --before-color-hover: #191c2a;
+    }
+}
+
+@media (prefers-color-scheme: light){
+    :root{
+       --fundo: #f1f1f1;
+        --texto-principal: black;
+        --texto-secundario: gray;
+        --button-color: red;
+        --button-color-hover: rgb(177, 2, 2);
+        --before-color-hover: red;
     }
 }
